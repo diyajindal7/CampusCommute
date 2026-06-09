@@ -27,7 +27,7 @@ function Register() {
 try {
 
   const response = await axios.post(
-    "http://localhost:5000/api/auth/register",
+    "http://13.60.99.228:5000/api/auth/register",
     {
       name,
       email,

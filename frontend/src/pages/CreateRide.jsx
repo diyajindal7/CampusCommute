@@ -25,7 +25,7 @@ setLoading(true);
     try {
       
       await axios.post(
-        "http://localhost:5000/api/rides/create",
+        "http://13.60.99.228:5000/api/rides/create",
         {
           destination,
           date,

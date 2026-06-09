@@ -17,7 +17,7 @@ function Requests() {
       const email = localStorage.getItem("userEmail");
 
       const response = await axios.get(
-        `http://localhost:5000/api/rides/myrides/${email}`
+        `http://13.60.99.228:5000/api/rides/myrides/${email}`
       );
 
       setRides(response.data);
@@ -40,7 +40,7 @@ const updateRequest = async (
   try {
 
     await axios.put(
-      `http://localhost:5000/api/rides/${rideId}/request/${requestId}`,
+      `http://13.60.99.228:5000/api/rides/${rideId}/request/${requestId}`,
       { status }
     );
 

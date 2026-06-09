@@ -23,7 +23,7 @@ const [loading, setLoading] =
 
       const response =
         await axios.post(
-          "http://localhost:5000/api/lobbies/create",
+          "http://13.60.99.228:5000/api/lobbies/create",
           {
             title,
             destination,

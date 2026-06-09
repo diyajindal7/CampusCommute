@@ -60,7 +60,7 @@ function Admin() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/admin/stats",
+        "http://13.60.99.228:5000/api/admin/stats",
          {
     headers: {
       "user-email":
@@ -84,7 +84,7 @@ function Admin() {
     try {
 
       const response = await axios.get(
-        "http://localhost:5000/api/admin/users",
+        "http://13.60.99.228:5000/api/admin/users",
          {
     headers: {
       "user-email":
@@ -108,7 +108,7 @@ function Admin() {
     try {
 
      await axios.put(
-  `http://localhost:5000/api/admin/make-admin/${id}`,
+  `http://13.60.99.228:5000/api/admin/make-admin/${id}`,
   {},
   {
     headers: {
@@ -143,7 +143,7 @@ const assignRole = async (
   try {
 
    await axios.put(
-  `http://localhost:5000/api/admin/assign-role/${id}`,
+  `http://13.60.99.228:5000/api/admin/assign-role/${id}`,
   { role },
   {
     headers: {
@@ -172,7 +172,7 @@ const assignRole = async (
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/admin/user/${id}`,
+        `http://13.60.99.228:5000/api/admin/user/${id}`,
          {
     headers: {
       "user-email":

@@ -23,7 +23,7 @@ function MyLobbies() {
 
       const response =
         await axios.get(
-          `http://localhost:5000/api/lobbies/my/${email}`
+          `http://13.60.99.228:5000/api/lobbies/my/${email}`
         );
 
       setLobbies(response.data);
@@ -45,7 +45,7 @@ function MyLobbies() {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/lobbies/${lobbyId}`
+      `http://13.60.99.228:5000/api/lobbies/${lobbyId}`
     );
 
     alert("Lobby deleted");

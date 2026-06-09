@@ -24,7 +24,7 @@ function Browse() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/api/rides"
+          "http://13.60.99.228:5000/api/rides"
         );
 
       setRides(response.data);
@@ -44,7 +44,7 @@ function Browse() {
     try {
 
       await axios.post(
-        `http://localhost:5000/api/rides/${rideId}/join`,
+        `http://13.60.99.228:5000/api/rides/${rideId}/join`,
         {
           email:
             localStorage.getItem(

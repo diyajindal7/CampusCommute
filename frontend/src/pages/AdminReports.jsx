@@ -19,7 +19,7 @@ function AdminReports() {
 
       const response =
         await axios.get(
-          "http://localhost:5000/api/reports"
+          "http://13.60.99.228:5000/api/reports"
         );
 
       setReports(
@@ -42,7 +42,7 @@ const deleteReport = async (
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/reports/${reportId}`
+      `http://13.60.99.228:5000/api/reports/${reportId}`
     );
 
     fetchReports();

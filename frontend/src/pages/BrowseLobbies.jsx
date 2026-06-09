@@ -26,7 +26,7 @@ function BrowseLobbies() {
 
         const response =
           await axios.get(
-            "http://localhost:5000/api/lobbies"
+            "http://13.60.99.228:5000/api/lobbies"
           );
 
         setLobbies(
@@ -54,7 +54,7 @@ toast.error(
           );
 
         await axios.post(
-          `http://localhost:5000/api/lobbies/${lobbyId}/join`,
+          `http://13.60.99.228:5000/api/lobbies/${lobbyId}/join`,
           { email }
         );
 
@@ -85,7 +85,7 @@ toast.error(
           );
 
         await axios.post(
-          `http://localhost:5000/api/lobbies/${lobbyId}/leave`,
+          `http://13.60.99.228:5000/api/lobbies/${lobbyId}/leave`,
           { email }
         );
 
@@ -111,7 +111,7 @@ toast.error(
       try {
 
         await axios.post(
-          "http://localhost:5000/api/reports",
+          "http://13.60.99.228:5000/api/reports",
           {
             reportedBy:
               localStorage.getItem(

@@ -32,7 +32,7 @@ function Profile() {
 
         const response =
           await axios.get(
-            `http://localhost:5000/api/auth/profile/${email}`
+            `http://13.60.99.228:5000/api/auth/profile/${email}`
           );
 
         setUser(
@@ -41,7 +41,7 @@ function Profile() {
 
         const statsResponse =
           await axios.get(
-            `http://localhost:5000/api/rides/profile-stats/${email}`
+            `http://13.60.99.228:5000/api/rides/profile-stats/${email}`
           );
 
         setStats(

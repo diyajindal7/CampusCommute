@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import Sidebar from "../components/Sidebar";
 
 const socket = io(
-  "http://localhost:5000"
+  "http://13.60.99.228:5000"
 );
 
 function Chat() {
@@ -29,7 +29,7 @@ function Chat() {
 
         const response =
           await fetch(
-            `http://localhost:5000/api/chat/${lobbyId}`
+            `http://13.60.99.228:5000/api/chat/${lobbyId}`
           );
 
         const data =

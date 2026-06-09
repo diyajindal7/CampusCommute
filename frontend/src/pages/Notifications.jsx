@@ -32,7 +32,7 @@ function Notifications() {
 
         const response =
           await axios.get(
-            `http://localhost:5000/api/notifications/${email}`
+            `http://13.60.99.228:5000/api/notifications/${email}`
           );
 
         setNotifications(

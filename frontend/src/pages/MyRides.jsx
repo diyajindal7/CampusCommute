@@ -26,7 +26,7 @@ function MyRides() {
 
         const response =
           await axios.get(
-            `http://localhost:5000/api/rides/myrides/${email}`
+            `http://13.60.99.228:5000/api/rides/myrides/${email}`
           );
 
         setRides(
@@ -56,7 +56,7 @@ function MyRides() {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/rides/${rideId}`
+      `http://13.60.99.228:5000/api/rides/${rideId}`
     );
 
     fetchMyRides();

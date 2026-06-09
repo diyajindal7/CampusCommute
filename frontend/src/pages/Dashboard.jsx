@@ -33,7 +33,7 @@ function Dashboard() {
 
         const profileResponse =
           await axios.get(
-            `http://localhost:5000/api/auth/profile/${email}`
+            `http://13.60.99.228:5000/api/auth/profile/${email}`
           );
 
         setUserName(
@@ -42,7 +42,7 @@ function Dashboard() {
 
         const response =
           await axios.get(
-            `http://localhost:5000/api/rides/myrides/${email}`
+            `http://13.60.99.228:5000/api/rides/myrides/${email}`
           );
 
         const rides =
