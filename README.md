@@ -1,5 +1,5 @@
 ## Live Demo
-https://your-deployed-link.com
+http://13.60.99.228/
 
 ## GitHub Repository
 https://github.com/diyajindal7/CampusCommute
